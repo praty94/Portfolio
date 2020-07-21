@@ -1,14 +1,17 @@
 import React from 'react';
-import Box from '@material-ui/core/Box';
+import Grid from '@material-ui/core/Grid';
 import ProjectCards from './Projects/ProjectCards';
+import ProjectsData from '../../../Data/Projects.json';
 const ProjectTab = () => {
-
     return (
-        <div>
-            <Box p={2}>                
-                <ProjectCards title="Personal Portfolio" subtitle="July 2020" description="Personal portfolio application made in ReactJs"></ProjectCards>                
-            </Box>            
-        </div>
+        <Grid container justify="center" alignItems="center" spacing={2}>
+            {ProjectsData ? ProjectsData.data.map((item, index) => (
+                <Grid item key={index}>
+                    <ProjectCards {...item}></ProjectCards>                    
+                </Grid>
+            )) : null}            
+        </Grid>
+
     )
 }
 

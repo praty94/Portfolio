@@ -1,0 +1,13 @@
+{
+    "data" : [{
+        "title":"Personal Portfolio",
+        "subtitle":"July 2020",
+        "description":"Personal portfolio application made in ReactJs."
+    },
+    {
+        "title":"Covid-19 Analytics",
+        "img":"https://i.imgur.com/iFdJGeU.png",        
+        "subtitle":"March 2020",
+        "description":"This ReactJs Web application was developed with collaboration with Indian Statistical Institute - Kolkata. It was aimed to make the process of unlocking of Covid affected areas more predictable for decision makers."
+    }]
+}
