@@ -15,7 +15,6 @@ const useStyles = makeStyles(() => ({
         backgroundSize: "cover",
         height: "450px",
         borderTop: "8px solid #fc9d03",
-        boxShadow: "0px 4px 10px 0px rgba(0,0,0,0.6)",
         textAlign: "center"
     },
     location: {

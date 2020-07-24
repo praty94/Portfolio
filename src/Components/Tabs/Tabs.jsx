@@ -30,8 +30,8 @@ export default function DisabledTabs() {
 
   return (
     <React.Fragment>
-      <Grid container justify="center" alignItems="center">
-        <Paper square>
+      <Grid container justify="center" alignItems="center" >
+        <Paper square >
           <Tabs
             value={value}
             indicatorColor="secondary"
