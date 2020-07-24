@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
     height: 400,
+    borderRadius:20,
     '&:hover': {
       boxShadow: '0px 2px 4px -1px rgba(0,0,0,0.3),0px 4px 5px 0px rgba(0,0,0,0.24),0px 1px 10px 0px rgba(0,0,0,0.22)',
       transform:'scale(1.01)',
@@ -39,7 +40,10 @@ function getTrimmedDescription(str) {
   }
   return str;
 }
-
+const openLink = (url, sameTab) => {
+  if(url)
+    sameTab ? window.location = url : window.open(url, "_blank");
+}
 function ProjectCard(props) {
   const classes = useStyles();
   const [isDescExpanded, setIsDescExpanded] = useState(false);
@@ -50,7 +54,7 @@ function ProjectCard(props) {
         subheader={props.subtitle}
         action={props.demoDisabled ? null :
           <IconButton aria-label="settings">
-            <LaunchIcon />
+            <LaunchIcon onClick={()=>openLink(props.demoLink)}/>
           </IconButton>
         }
       />
@@ -76,8 +80,8 @@ function ProjectCard(props) {
 
       </CardContent>
       <CardActions className={classes.actions}>
-        {props.sourceDisabled ? null : <Button startIcon={<GitHubIcon />}>View Source</Button>}
-        {props.demoDisabled ? null : <Button startIcon={<ComputerIcon />}>Live Demo</Button>}
+        {props.sourceDisabled ? null : <Button startIcon={<GitHubIcon />} onClick={()=>openLink(props.sourceLink)}>View Source</Button>}
+        {props.demoDisabled ? null : <Button startIcon={<ComputerIcon />} onClick={()=>openLink(props.demoLink)}>Live Demo</Button>}
       </CardActions>
     </Card>
   );
