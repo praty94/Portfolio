@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     height: 400,
     '&:hover': {
       boxShadow: '0px 2px 4px -1px rgba(0,0,0,0.3),0px 4px 5px 0px rgba(0,0,0,0.24),0px 1px 10px 0px rgba(0,0,0,0.22)',
-      transform:'scale(1.015)',
+      transform:'scale(1.01)',
       cursor:'default'
     },    
     transition: "all 0.25s ease-out"
@@ -39,6 +39,7 @@ function getTrimmedDescription(str) {
   }
   return str;
 }
+
 function ProjectCard(props) {
   const classes = useStyles();
   const [isDescExpanded, setIsDescExpanded] = useState(false);

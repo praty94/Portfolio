@@ -4,26 +4,32 @@
             "title": "Covid-19 Analytics",
             "img": "https://i.ibb.co/VC3cHN9/iFdJGeU.png",
             "subtitle": "ReactJS",
-            "description": "This Web application was developed with collaboration with Indian Statistical Institute - Kolkata. It was aimed to make the process of unlocking of Covid affected areas more predictable for decision makers."
+            "description": "This Web application was developed with collaboration with Indian Statistical Institute - Kolkata. It was aimed to make the process of unlocking of Covid affected areas more predictable for decision makers.",
+            "sourceLink":"https://github.com/praty94/covid-app-isi",
+            "demoLink":"https://praty94.github.io/covid-app-isi/"
         },
         {
             "title": "Personal Portfolio",
             "subtitle": "ReactJS",
-            "description": "Personal portfolio application made in ReactJs."
+            "description": "Personal portfolio application made in ReactJs.",
+            "sourceLink":"https://github.com/praty94/Pratyay_Portfolio",
+            "demoLink":""
         },
         {
             "title": "CoolLockScreen",
             "img":"https://i.ibb.co/sjqq7bQ/coollockscreen.jpg",
             "subtitle": "UWP [C#, XAML]",
             "description": "Windows 10 application for creating collections of wallpapers which periodically update the lockscreen and desktop background. It also features an integrated image editor with various free to use tools.",
-            "sourceDisabled":true
+            "sourceDisabled":true,
+            "demoLink":""
         },
         {
             "title": "SonicXBeat",
             "img":"https://i.ibb.co/HHbfLVW/sonicxbeat.jpg",
             "subtitle": "Windows Phone [C#, XAML]",
             "description": "Windows Phone (8.1/10) music player application. Top features included integrated lyrics, custom themes and integrated with the windows live tiles .",
-            "sourceDisabled":true
+            "sourceDisabled":true,
+            "demoLink":""
         }
     ]
 }
