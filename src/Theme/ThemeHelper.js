@@ -1,6 +1,7 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 export const themeColors =
 {
+  common:{sectionColor:"#e5d1ab"},
   light: { primary: "#FFFFFF", secondary: '#fc9d03' },
   dark: { primary: "#333", secondary: '#fc9d03' }
 };

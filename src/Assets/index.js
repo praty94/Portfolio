@@ -1,1 +1,12 @@
 export {default as background} from './bg.jpg';
+export {default as background1} from './newbg.jpg';
+export {default as triangle} from './icons/triangle.svg';
+export {default as triangleWhite} from './icons/triangle_white.svg';
+export {default as triangleBlue} from './icons/triangle_blue.svg';
+export {default as square} from './icons/square.svg';
+export {default as squareWhite} from './icons/square_white.svg';
+export {default as hexagon} from './icons/hexagon.svg';
+export {default as hexagonWhite} from './icons/hexagon_white.svg';
+export {default as circle} from './icons/circle.svg';
+export {default as circleWhite} from './icons/circle_white.svg';
+export {default as crossWhite} from './icons/close.svg';

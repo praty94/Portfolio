@@ -11,7 +11,7 @@ function AppShell() {
     },[appState.theme]);   
     return (
         <ThemeProvider theme={ThemeHelper(appState.theme)}>
-            <Home></Home>
+            <Home></Home>                     
         </ThemeProvider>
     );
 }
