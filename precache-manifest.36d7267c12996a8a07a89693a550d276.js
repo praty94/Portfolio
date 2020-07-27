@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ef9a022b9d30845180f0a0c1767942b1",
+    "revision": "647824fb5a1aea3f1b308d8c15574d74",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "c7df5666f3b8db7de18d",
-    "url": "/portfolio/static/css/main.e0ee962b.chunk.css"
+    "revision": "db20605ea2f20f9488de",
+    "url": "/portfolio/static/css/main.f7a22f26.chunk.css"
   },
   {
-    "revision": "2bd88b229f3d1e787c47",
-    "url": "/portfolio/static/js/2.b771b658.chunk.js"
+    "revision": "ac538deca9276afc770a",
+    "url": "/portfolio/static/js/2.1dbaad3f.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/portfolio/static/js/2.b771b658.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.1dbaad3f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c7df5666f3b8db7de18d",
-    "url": "/portfolio/static/js/main.d8f57cb7.chunk.js"
+    "revision": "db20605ea2f20f9488de",
+    "url": "/portfolio/static/js/main.e25be4f8.chunk.js"
   },
   {
     "revision": "0225c8b4a289befb8332",
@@ -36,16 +36,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/close.e3e6d1cc.svg"
   },
   {
+    "revision": "17edda2e4065d2bc94a32caed6d312fe",
+    "url": "/portfolio/static/media/codeLogo.17edda2e.svg"
+  },
+  {
     "revision": "763bc4e3ca788449232274a51df7b724",
     "url": "/portfolio/static/media/hexagon.763bc4e3.svg"
   },
   {
     "revision": "2f0915b751e11058d95a51bb0911e7b9",
     "url": "/portfolio/static/media/hexagon_white.2f0915b7.svg"
-  },
-  {
-    "revision": "bfcf51bda0a80eeacea1be56f4af88e2",
-    "url": "/portfolio/static/media/newbg.bfcf51bd.jpg"
   },
   {
     "revision": "50713bf85942a80f268f303b1457409c",
@@ -66,5 +66,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "18431a260a5a1bd04c8bc42c3cf6398c",
     "url": "/portfolio/static/media/triangle_white.18431a26.svg"
+  },
+  {
+    "revision": "ed26c3e0902e0f21d9e0880abd81d6c5",
+    "url": "/portfolio/static/media/webLogo.ed26c3e0.svg"
   }
 ]);
