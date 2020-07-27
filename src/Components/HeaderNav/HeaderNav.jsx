@@ -22,8 +22,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "none"
   },
   appBar: {
-    background: "rgba(0,0,0,1)",
-    boxShadow: "none"
+    background: "#222"
   }
 }));
 
@@ -53,17 +52,18 @@ export default function HeaderNav(props) {
             <ToggleButton value="home">
               Home
           </ToggleButton>
+            <ToggleButton value="aboutMe">
+              About me
+          </ToggleButton>
             <ToggleButton value="projects">
               Projects
           </ToggleButton>
             <ToggleButton value="tech">
               Technologies
           </ToggleButton>
-            <ToggleButton value="aboutMe">
-              About me
-          </ToggleButton>
+
           </ToggleButtonGroup>
-          
+
         </Toolbar>
       </AppBar>
     </div>

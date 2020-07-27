@@ -1,9 +1,9 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 export const themeColors =
 {
-  common:{sectionColor:"#e5d1ab"},
+  common:{sectionColor:"#E5D1AB",sectionColor2:"#F0BE5E"},
   light: { primary: "#FFFFFF", secondary: '#fc9d03' },
-  dark: { primary: "#333", secondary: '#fc9d03' }
+  dark: { primary: "#222", secondary: '#fc9d03' }
 };
 const themeHelper = (theme) => {
   if (theme === "light") {
