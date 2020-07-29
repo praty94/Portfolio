@@ -1,4 +1,3 @@
-export {default as background} from './newbg.jpg';
 export {default as triangle} from './icons/triangle.svg';
 export {default as triangleWhite} from './icons/triangle_white.svg';
 export {default as triangleBlue} from './icons/triangle_blue.svg';
@@ -11,3 +10,4 @@ export {default as circleWhite} from './icons/circle_white.svg';
 export {default as crossWhite} from './icons/close.svg';
 export {default as webLogo} from './icons/webLogo.svg';
 export {default as codeLogo} from './icons/codeLogo.svg';
+export {default as praty94img} from './praty94.jpg'
