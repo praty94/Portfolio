@@ -1,24 +1,31 @@
-import React, { useRef,useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Header from '../HeaderNav/HeaderNav';
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
-import { webLogo,codeLogo } from '../../Assets';
+import { webLogo, codeLogo } from '../../Assets';
 import { Grid, Typography, Button, Paper, Box } from '@material-ui/core';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import AboutMe from '../AboutMe/AboutMe';
+import CV from '../CV/cv';
 
 const useStyles = makeStyles((theme) => ({
     sectionContainer: {
         height: "100vh",
-        textAlign: "left",
-        //backgroundColor:'#e5d1ab',
+        textAlign: "left"
+    },
+    sectionContainerFluid: {        
+        paddingBottom: "2rem",
+        minHeight: "100vh",
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center'
+    },
+    gradientMain: {
         backgroundImage: 'linear-gradient(to left top, #f2c570, #efc87f, #eccb8e, #e8ce9c, #e5d1ab);'
     },
-    sectionContainerFluid:{
-        backgroundImage: 'linear-gradient(to left top, #f2c570, #efc87f, #eccb8e, #e8ce9c, #e5d1ab);',
-        paddingBottom:"2rem",
-        minHeight:"100vh"
+    gradientSecondary:{
+        backgroundImage: 'linear-gradient(to right bottom, #f2c570, #efc87f, #eccb8e, #e8ce9c, #e5d1ab);'
     },
     headerNav: {
         //backgroundImage: `linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.4)),url(${background})`,
@@ -96,10 +103,14 @@ const useStyles = makeStyles((theme) => ({
             fontSize: '2.25rem'
         }
     },
-    aboutMeContainer:{
-        paddingTop:theme.spacing(16),
-        paddingLeft:theme.spacing(4),
-        paddingRight:theme.spacing(4)
+    aboutMeContainer: {
+        paddingTop: theme.spacing(10),
+        paddingLeft: theme.spacing(4),
+        paddingRight: theme.spacing(4)
+    },
+    cvContainer: {
+        padding: theme.spacing(4),
+        color:'#fff'
     }
 }));
 
@@ -131,14 +142,14 @@ const Home = () => {
             <div className={clsx({ [classes.headerNav]: true, [classes.sectionContainer]: true, [classes.clipSection]: minHeight460 })}>
                 <Box padding={2} style={{ zIndex: 99, position: 'relative' }}>
                     <div className={classes.mainTextContent}>
-                        <Grid className={clsx('shadowText',{ [classes.nameContainer]: true, [classes.nameMarginNormal]: minHeight580, [classes.nameMarginSmall]: !minHeight580 })}>
+                        <Grid className={clsx('shadowText', { [classes.nameContainer]: true, [classes.nameMarginNormal]: minHeight580, [classes.nameMarginSmall]: !minHeight580 })}>
                             <strong>Pratyay</strong><span style={{ fontWeight: 'lighter' }}>Bandyopadhyay</span>
                         </Grid>
                         <Grid className={classes.jobContainer}>
-                            <Typography variant="h3" id="jobDesc" className={clsx('shadowText',{[classes.adaptiveText]: true, [classes.smallText]: !minHeight490 })}><strong ref={roleTxt}></strong></Typography>
+                            <Typography variant="h3" id="jobDesc" className={clsx('shadowText', { [classes.adaptiveText]: true, [classes.smallText]: !minHeight490 })}><strong ref={roleTxt}></strong></Typography>
                         </Grid>
 
-                        <Button size="large" className={clsx('shadowText',classes.location)} disabled>
+                        <Button size="large" className={clsx('shadowText', classes.location)} disabled>
                             <LocationOnIcon></LocationOnIcon> India
                         </Button>
                         <div className={clsx({ [classes.socialContainer]: true, [classes.socialMarginNormal]: minHeight490, [classes.socialMarginSmall]: !minHeight490 })}>
@@ -152,12 +163,20 @@ const Home = () => {
                 <div className="area">
                     <ul className="staticShapes">
                         <li><img height={400} width={400} src={webLogo} alt="animLogo"></img></li>
-                        <li><img height={300} width={300} src={codeLogo} alt="codeLogo"></img></li>                        
-                    </ul>                    
-                </div >                
+                        <li><img height={300} width={300} src={codeLogo} alt="codeLogo"></img></li>
+                    </ul>
+                </div >
             </div>
 
-            <Paper square={true} className={classes.sectionContainerFluid}>
+            <Paper square={true} className={clsx(classes.gradientMain,classes.sectionContainerFluid)}>
+                <Grid className={classes.aboutMeContainer}>
+                    <AboutMe></AboutMe>
+                </Grid>
+            </Paper>
+            <Grid container justify="center" alignItems="center" className={classes.cvContainer}>
+                <CV></CV>
+            </Grid>
+            <Paper square={true}  className={clsx(classes.gradientSecondary,classes.sectionContainerFluid)}>
                 <Grid className={classes.aboutMeContainer}>
                     <AboutMe></AboutMe>
                 </Grid>

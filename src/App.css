@@ -119,3 +119,6 @@ h3#jobDesc strong{
 .shadowText {
   text-shadow:0px 2px 2px #222
 }
+.MuiSvgIcon-fontSizeLarge{
+  font-size: 5rem!important;
+}

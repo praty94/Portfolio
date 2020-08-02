@@ -11,3 +11,4 @@ export {default as crossWhite} from './icons/close.svg';
 export {default as webLogo} from './icons/webLogo.svg';
 export {default as codeLogo} from './icons/codeLogo.svg';
 export {default as praty94img} from './praty94.jpg'
+export {default as resume} from './icons/resume.svg'
